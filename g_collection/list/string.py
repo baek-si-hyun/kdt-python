@@ -9,6 +9,7 @@ print('Apple123!@#'.lower())
 
 # split()
 data = '사과, 바나나, 파인애플, 포도, 복숭아'
+# split(',', maxsplit=2)은 ,를 기준으로 앞에서부터 2번만 ,로 문자열을 나누라는 의미이다.
 print(data.split(',', maxsplit=2))
 print('A B C D E F'.split())
 print('A         \n       B'.split())
@@ -49,5 +50,7 @@ print('Z' in 'ABC')
 # 전달한 값이 몇개가 있는지 검사
 print('qweqwffwefowrgoweogwoe'.count('o'))
 
+# join은 문자열을 결합할때 사용한다.
+# 밑에처럼 ''.join을 하면 공백없이, 구분점없이 문자열을 결합하겠다는 의미이다.
 s = '189,000 원'
 print(''.join(i for i in s if '0' <= i <= '9'))

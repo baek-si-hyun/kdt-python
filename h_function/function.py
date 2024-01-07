@@ -62,13 +62,13 @@
 
 
 # 문자열을 입력받고 원하는 문자의 개수를 구해주는 함수
-def fn8(string, letter):
-    length = string.count(letter)
-    return length
-
-
-
-print(fn8('qortlgussss', 's'))
+# def fn8(string, letter):
+#     length = string.count(letter)
+#     return length
+#
+#
+#
+# print(fn8('qortlgussss', 's'))
 
 
 '''
@@ -78,9 +78,11 @@ print(fn8('qortlgussss', 's'))
 string, letter = input('문자열을 입력하세요: '), input('문자를 입력하세요: ')
 
 
+# 파이썬은 동적 할당이다
+# 파이썬은 동적 할당이기 때문에 힙메모리만 사용한다
+# 파이썬의 스코프는 함수 단위이다
 def find_index_fn(string, letter):
     is_find = string.find(letter)
-    find_index = 0
     if is_find != -1:
         find_index = string.index(letter)
     else:

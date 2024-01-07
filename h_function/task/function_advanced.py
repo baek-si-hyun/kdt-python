@@ -32,7 +32,7 @@ def insert(**kwargs):
     name, price = kwargs.values()
     data_dict[name] = int(price)
 
-
+# key와 함께 사용하고자 하면 매개변수를 받고 싶으면 매개 변수들 앞에  *,을 추가한다
 def update(*, name, new_name, new_price):
     del data_dict[name]
     data_dict[new_name] = int(new_price)

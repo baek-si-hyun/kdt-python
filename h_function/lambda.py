@@ -23,12 +23,14 @@
 
 # 각 경로 앞에 '/app'를 붙여준다.
 # '/app/game', '/app/news', '/app/fashion', '/app/ranking'
+# map은 반복 가능한 값들을 변경하기 위해 사용한다
 urls = ['/game', '/news', '/fashion', '/ranking']
 full_urls = list(map(lambda x: '/app' + x, urls))
 print(full_urls)
 
 # filter(function, iterator)
 # 1 ~ 10 까지 중 짝수만 출력
+# fliter는 반복가능한 값들 중 원하는 값만 추출하기 위해 사용한다.
 print(list(filter(lambda number: number % 2 == 0, [i + 1 for i in range(10)])))
 
 # ['/app/game', '/app/news', '/app/fashion', '/app/ranking']

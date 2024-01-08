@@ -146,7 +146,7 @@ post = read(5)
 post['title'] = '수정된 제목'
 # update 함수는 인수로 **kwargs을 받는다
 # 그러므로 update함수는 인자를 전달받을때
-# update(number=1, title='Updated Title', content='Updated Content', file='/usr/post/file/updated.png')
+update(number=1, title='Updated Title', content='Updated Content', file='/usr/post/file/updated.png')
 # 형식으로 전달 받아야하지만 dict자체를 전달받을때는 인자 앞에 **을 붙여야한다
 # {'number': 1, 'title': 'Updated Title', 'content': 'Updated Content', 'file': '/usr/post/file/updated.png'}을
 # number=1, title='Updated Title', content='Updated Content', file='/usr/post/file/updated.png' 이렇게 알아서 바꿔준다

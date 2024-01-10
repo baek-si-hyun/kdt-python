@@ -47,6 +47,7 @@ def count_string(*strings):
 
     return count
 
+
 strings = ['AA', 'AAA', 'AAAA', "ASOJADON"]
 
 print(count_string(*strings))

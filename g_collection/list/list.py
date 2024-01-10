@@ -33,7 +33,7 @@ animals.remove('fish')
 print(animals)
 
 # del()
-del(animals[1])
+del (animals[1])
 print(animals)
 del animals[1]
 print(animals)

@@ -4,7 +4,7 @@
 
 class Animal:
     # __new__ 메서드는 생략되었다
-    # __init__메서드는 __new__메서드에서 메로리에 할당한 필드의 주소를 가지고있다
+    # __init__메서드는 __new__메서드에서 메모리에 할당한 필드의 주소를 가지고있다
     # 필드에 올라간 변수들은 self를 통해 접근할 수 있다
     # feed_count = 1, life = 1 는 default args를 사용했다
     def __init__(self, name, age, gender, feed_count=1, life=1):

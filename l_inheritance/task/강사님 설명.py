@@ -29,7 +29,6 @@ class Bank:
         self.password = password
         self.money = money
 
-
     # 어떤 은행에서 개설하는 지를 bank_choice로 전달받는다.
     # 개설에 필요한 모든 회원정보는 **kwargs로 받는다.
     @classmethod
@@ -159,7 +158,8 @@ if __name__ == '__main__':
                 # 계좌가 개설된다.
                 # 어떤 은행에서 개설했는 지를 bank_choice에 담아서 전달한다.
                 # open_account()는 회원의 정보를 **kwargs로 받기 때문에 모두 풀어서 전달해준다.
-                user = Bank.open_account(bank_choice, owner=owner, account_number=account_number, phone=phone, password=password, money=money)
+                user = Bank.open_account(bank_choice, owner=owner, account_number=account_number, phone=phone,
+                                         password=password, money=money)
 
                 # 재정의한 __str__()이 사용되고, 회원의 전체 정보를 확인한다.
                 print(user)
@@ -219,7 +219,7 @@ if __name__ == '__main__':
 
                 else:
                     print(error_message)
-            
+
             # 계좌 번호 재설정
             # 핸드폰 번호, 비밀번호 입력 후
             # 정확하면, 해당 회원의 계좌번호 재설정(다시 입력받기)
@@ -243,16 +243,3 @@ if __name__ == '__main__':
 
             else:
                 print(error_message)
-
-            
-
-
-
-
-
-
-
-
-
-
-

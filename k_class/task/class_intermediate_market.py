@@ -43,13 +43,3 @@ market.sell(customer)
 
 print(market.stock)
 print(customer.money)
-
-
-
-
-
-
-
-
-
-

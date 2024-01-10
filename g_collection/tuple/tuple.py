@@ -22,4 +22,3 @@ print(datas[0])
 # 변수명이 전부 대문자이면 상수라고 의심해 봐야 한다
 ERROR_CODE = 1,
 print(type(ERROR_CODE))
-

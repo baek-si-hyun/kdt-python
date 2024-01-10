@@ -40,8 +40,6 @@
 #         break
 
 
-
-
 # while문 정답
 # boolean = False
 # while not boolean:

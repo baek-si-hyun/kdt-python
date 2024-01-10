@@ -32,6 +32,7 @@ def insert(**kwargs):
     name, price = kwargs.values()
     data_dict[name] = int(price)
 
+
 # key와 함께 사용하고자 하면 매개변수를 받고 싶으면 매개 변수들 앞에  *,을 추가한다
 def update(*, name, new_name, new_price):
     del data_dict[name]
@@ -41,12 +42,14 @@ def update(*, name, new_name, new_price):
 def delete(name):
     del data_dict[name]
 
+
 def select_by_name(keyword):
     result = {}
     if keyword in data_dict:
         result = {'name': keyword, 'price': data_dict[keyword]}
 
     return result
+
 
 def select_by_price(price, range=50):
     result = []
@@ -59,8 +62,10 @@ def select_by_price(price, range=50):
 
     return result
 
+
 def select_all():
     return data_dict
+
 
 while True:
     # 사용자에게 메뉴를 보여주고 선택한 번호를 choice에 저장
@@ -147,9 +152,3 @@ while True:
 
     print(result_message)
     result_message = ""
-
-
-
-
-
-

@@ -15,7 +15,7 @@
 
 # 1~10까지 중 3가지만 출력
 for i in range(10):
-    print(i+1)
+    print(i + 1)
     if i == 2:
         break
 

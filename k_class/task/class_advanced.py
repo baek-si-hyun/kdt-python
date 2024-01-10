@@ -36,14 +36,4 @@ print(user.user_id)
 admin = User.set_admin(user_id='hds', user_password='1234', user_name='한동석')
 print(admin.user_id)
 
-
 print(User.get_number())
-
-
-
-
-
-
-
-
-

@@ -1,5 +1,6 @@
 from connection_module import data_dict
 
+
 def insert(**kwargs):
     '''
 
@@ -17,12 +18,14 @@ def update(*, name, new_name, new_price):
 def delete(name):
     del data_dict[name]
 
+
 def select_by_name(keyword):
     result = {}
     if keyword in data_dict:
         result = {'name': keyword, 'price': data_dict[keyword]}
 
     return result
+
 
 def select_by_price(price, range=50):
     result = []
@@ -34,6 +37,7 @@ def select_by_price(price, range=50):
             result.append({'name': name, 'price': price})
 
     return result
+
 
 def select_all():
     return data_dict

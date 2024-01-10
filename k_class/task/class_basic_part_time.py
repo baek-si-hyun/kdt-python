@@ -36,12 +36,3 @@ neo = PartTimer('네오', '역삼동')
 print(ryan.total_money, ryan.nickname, ryan.address)
 result = ryan.calculate_money(8, 10000)
 print(ryan.total_money, ryan.nickname, ryan.address)
-
-
-
-
-
-
-
-
-

@@ -39,6 +39,7 @@
 
 pay = [10000, 4000, 5000]
 
+
 # 컴프리헨션 사용
 def user_coupon(*args, **kwargs):
     '''
@@ -71,9 +72,7 @@ def user_coupon(*args, **kwargs):
     return result
 
 
-
 print(user_coupon(*pay, coupon=10, count=1))
-
 
 
 # 강사님

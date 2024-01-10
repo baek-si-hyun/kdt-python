@@ -1,7 +1,9 @@
 ## 매직 메소드
+
     클래스 안에 재정의할 수 있는 스페셜 메소드이다.
 
 ### 메서드 종류
+
     +      __add__(self, other)            덧셈
     *      __mul__(self, other)            곱셈
     -      __sub__(self, other)            뺄셈

@@ -11,4 +11,4 @@ condition1 = 10 > 9
 condition2 = 10 == 1
 
 print(condition1 and condition2)
-print(not(condition1 and condition2))
+print(not (condition1 and condition2))

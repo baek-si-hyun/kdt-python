@@ -50,4 +50,3 @@ else:
     result_massage = f'{number1}이 {number2} 과 같습니다.'
 
 print(result_massage)
-

@@ -64,9 +64,3 @@ taxi = Taxi()
 print(taxi.calculate_fare(20000, 1))
 print(taxi.calculate_fare(30000, 10))
 print(taxi.income)
-
-
-
-
-
-

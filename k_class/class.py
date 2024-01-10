@@ -8,6 +8,7 @@ class A:
         print('__new__')
         obj = super().__new__(cls)
         return obj
+
     # __new__가 할당한 주소를 self를 통해 __init__이 받은것이다.
     # 우리가 원하는 데이터들을 받아서 처리하는 메서드는  __init__이다.
     # __new__가 메모리에 필드를 할당해야 필드의 주소를 가져올수 있기 때문에
@@ -27,7 +28,6 @@ class A:
 
     def print_name(self):
         print(self.name)
-
 
 
 # a는 객체이다

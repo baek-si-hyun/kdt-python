@@ -145,4 +145,3 @@ while True:
     print(result_message)
     # 에러코드를 출력했다면 초기화 하여 생긴 오류와 다른오류가 result_message에 저장되지 않도록 한다
     result_message = ""
-

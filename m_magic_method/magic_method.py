@@ -9,6 +9,7 @@ class Magic:
     # def __str__(self):
     #     return f'{self.__repr__()}, __repr__() 사용됨.'
 
+
 # 객체를 출력하면 항상 __repr__()가 자동으로 뒤에 붙는다.
 # print(Magic().__repr__())
 # 만약 해당 클래스에서 __str__()을 재정의했다면, __repr__()가 아닌 __str__()이 사용된다.
@@ -54,14 +55,3 @@ print(std1.__dict__.__getitem__('score'))
 print([1, 2, 3].__getitem__(2))
 print([1, 2, 3].__contains__(0))
 print(std1 == std2)
-
-
-
-
-
-
-
-
-
-
-

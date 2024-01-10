@@ -21,7 +21,3 @@ for i in range(확률 // 10):
 # 3. 10개 중 1은 3개 있기 때문에, 1이 나올 확률은 30%이다.
 if rating[r.randint(0, len(rating) - 1)] == 1:
     print('강화 성공')
-
-
-
-

@@ -85,7 +85,7 @@ def set_product(*args):
     # 상품 정보를 전달 받고 모든 요소에 number값을 추가한다
     for product in args:
         number += 1
-        #product에 'number'라는 키가 없으면 새로운 키:값 을 추가한다
+        # product에 'number'라는 키가 없으면 새로운 키:값 을 추가한다
         product['number'] = number
 
     def insert(**kwargs):
@@ -105,6 +105,7 @@ def set_product(*args):
 
     def select_all():
         return args
+
     # dict형식으로 사용하고자 하는 클로저 함수를 사용 할수 있게 만든다
     return {'insert': insert, 'update': update, 'select_all': select_all}
 

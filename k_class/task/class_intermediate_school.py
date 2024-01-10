@@ -63,11 +63,3 @@ students = [
 teacher.teach(students)
 for student in students:
     student.print_info()
-
-
-
-
-
-
-
-

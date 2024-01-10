@@ -14,4 +14,5 @@ print(result)
 def get_info(name='익명', age=0):
     return {'name': name, 'age': age}
 
+
 print(get_info('백시현'))

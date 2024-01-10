@@ -1,4 +1,5 @@
 ## API(Application Programming Interface)
+
     선배 개발자들이 미리 작성해놓은 틀(소스코드)
 
     1. 내부 API(기본 API)

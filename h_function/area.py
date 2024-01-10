@@ -14,7 +14,7 @@ def increase():
     # print(count)
     # 지역 변수
     # count = 0
-    global count # 전역변수를 수정하려면 global 키워드를 사용한다.
+    global count  # 전역변수를 수정하려면 global 키워드를 사용한다.
     count += 1
 
 

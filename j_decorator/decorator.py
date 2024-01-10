@@ -26,6 +26,8 @@ def add(*args):
 
 result = add(1, 2, 3)
 print(result)
+
+
 # 출력 순서
 # log_time 들어옴
 # log_time 함수 종료
@@ -34,7 +36,6 @@ print(result)
 # 2024-01-07 18:09:34.918678
 # logging 함수 종료
 # 6
-
 
 
 # 평균을 구해주는 데코레이터를 제작한다.
@@ -59,6 +60,7 @@ def average(original_function):
         return original_function(*args, **kwargs)
 
     return operate
+
 
 # set_datas는 original_function이다
 # 데코레이터로 감싼 함수가 호출되면 데코레이터 함수로 가서 클로저 함수를 실행한다

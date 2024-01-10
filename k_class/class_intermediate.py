@@ -18,6 +18,7 @@ class Car:
     def engine_end(self):
         print(self.brand + '시동 꺼짐')
 
+
 # mom_car = Car('Benz', 'black', 15000)
 # daddy_car = Car('bmw', 'blue', 8800)
 #

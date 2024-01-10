@@ -38,4 +38,3 @@ print(list(filter(lambda number: number % 2 == 0, [i + 1 for i in range(10)])))
 urls = ['/app/game', '/app/news', '/app/fashion', '/app/ranking']
 print(list(filter(lambda url: 'game' in url, urls)))
 print(list(filter(lambda url: url.split('/')[-1] == 'game', urls)))
-

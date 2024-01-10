@@ -61,10 +61,6 @@ class Bank:
     # 생성자가 필요로 하는 값들은 kwargs로 별도로 필요한 값은 따로 받는다
     @classmethod
     def open_account(cls, bank_choice, **kwargs):
-        # 파이썬은 코드를 위에서부터 아래로 읽지만
-        # 모든 클래스들은 정의 되는 순간 메모리에 올라간다
-        # 그래서 해당 클래스의 주소값은 사용할 있으나 객체화가 되지 않았기 때문에
-        # 해당 클래스의 필드에는 접근이 불가하다
         # [ShinHan, KookMin, KaKao]라는 list에서 사용자가 입력한 bank_choice에 1을 빼면
         # 해당 list의 인덱스 번호이다 ex) data_list[1]
         # data_list[1]는 KookMin임으로 뒤에 ()를 붙이면 생성자가 된다
@@ -269,15 +265,3 @@ if __name__ == '__main__':
 
             else:
                 print(error_message)
-
-
-
-
-
-
-
-
-
-
-
-

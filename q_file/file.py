@@ -70,4 +70,5 @@ with open('food.txt', 'w', encoding='utf-8') as file:
 with open('food.txt', 'r', encoding='utf-8') as file:
     print("".join(file.readlines()))
 
-
+# 파일을 새로 생성하는 'w'나 추가하는 'a'는 해당 경로에 파일이 없으면 새로 생성하지만 'r'은 생성하지 못한다
+# 전에 있던 파일명에 'w'를 사용하게 되면 기존에 있던 데이터들이 전부 삭제된다.(주의)

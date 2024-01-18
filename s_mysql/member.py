@@ -5,7 +5,7 @@ if __name__ == '__main__':
     # 아직 모르는 값 자리에 %s를 작성한다.
     insert_query = "insert into tbl_member(email, password, name) \
                     values (%s, %s, %s)"
-
+    
     # 암호화
     password = '7890'
     encryption = hashlib.sha256()
@@ -36,3 +36,4 @@ if __name__ == '__main__':
     delete_params = ['gmail']
 
     # delete(delete_query, delete_params)
+

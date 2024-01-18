@@ -23,7 +23,7 @@
 
 # 매개변수 앞에 *을 쓰게 되면 매개젼수들을 키값으로 사용할 수 있다
 def check(*, key: str, value: str) -> dict:
-    # 클래스 내의 정적변수에 접근 할때는 클래스명.변수명 을 사요앻야한다
+    # 클래스 내의 정적변수에 접근 할때는 클래스명.변수명 을 사용해야 한다
     # banks 리스트의 요소를 순회하면서 check_account_number, check_phone 메서드에서 전달하는 값으로
     # 중복을 검사한다
     for bank in Bank.banks:

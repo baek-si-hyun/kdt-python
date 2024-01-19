@@ -1,30 +1,36 @@
 import datetime
+from part_time import PartTime
 
 
 class ConferenceRoom:
-    def __init__(self, id, offices, reservations, part_times):
+    def __init__(self, id: int, part_times: tuple):
         self.id = id
-        self.offices = offices
-        self.reservations = reservations
         self.part_times = part_times
+        self.reservations = None
 
-    @classmethod
-    def formatting(cls, id, offices, reservations, part_times):
-        if part_times:
-            for part_time in part_times:
-                seconds = part_time['time'].seconds
-                part_time['time'] = str(datetime.timedelta(seconds=seconds))
+    def __check_reservation(self, part_time: PartTime):
+        check = False
+        for reservation in self.reservations:
+            if str(reservation.get("time")) == part_time.__str__():
+                part_time.status = False
+                check = True
+                break
+        return "예약 불가" if check else "예약 가능"
 
-        if reservations:
-            for reservation in reservations:
-                reservation_seconds = reservation['time'].seconds
-                reservation['time'] = str(datetime.timedelta(seconds=reservation_seconds))
-                reservation['created_date'] = reservation['created_date'].strftime("%Y-%m-%d %H:%M")
+    def __str__(self):
+        time_str = ""
+        for i, part_time in enumerate(self.part_times):
+            time_str += f"{i + 1}. {part_time.__str__()} ({self.__check_reservation(part_time)})\n"
+        return time_str
 
-        if len(reservations) <= len(part_times):
-            for reservation in reservations:
-                for index, part_time in enumerate(part_times):
-                    if reservation['time'] == part_time['time']:
-                        del part_times[index]
 
-        return cls(id, offices, reservations, part_times)
+
+
+
+
+
+
+
+
+
+

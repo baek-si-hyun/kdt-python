@@ -157,10 +157,8 @@ create table tbl_reservation(
                             references tbl_conference_room(id)
 );
 
-
-
-
-
-
-
-
+select * from tbl_client;
+select * from tbl_office;
+select * from tbl_conference_room;
+select * from tbl_part_time;
+select * from tbl_reservation;
